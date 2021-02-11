@@ -45,6 +45,36 @@ def tool1():
         time.sleep(180)
         driver.refresh() # site refresh
         tool1() # starting loop
+       
+    
+    
+    def else1():
+ 
+    time.sleep(10)
+    try:
+        driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[4]/div/button").click() # views method button
+    except:
+        print(Fore.RED + 'Solve the Captcha!') # captcha alert
+        driver.refresh() # site refresh
+        else1()
+    try:
+        time.sleep(3) 
+        driver.find_element_by_xpath("//*[@id=\"sid4\"]/div/div/div/form/div/input").send_keys(vid) #site input text button
+        driver.find_element_by_xpath("//*[@id=\"sid4\"]/div/div/div/form/div/div/button").click() #site views button
+        time.sleep(2)
+        driver.find_element_by_xpath("//*[@id=\"c2VuZC9mb2xsb3dlcnNfdGlrdG9V\"]/div[1]/div/form/button").click()
+        driver.refresh() # site refresh
+        z += 1
+        total = z * 1000 # "z" is how many times you used the tool and basically 1000 views per 1z
+        print(Fore.GREEN + 'Done! Total Views:', total,'views') # done views
+        time.sleep(330) # 5min30sec timesleep because of 5min30sec cooldown
+        else1() # repeating
+    except:
+        print(Fore.RED + 'Timer isn´t finished yet! Trying again in 3 minutes.') # low chance that this will happen unless they changed time on site
+        time.sleep(180)
+        driver.refresh() # site refresh
+        else1() # starting loop
+
 
 
 os.system('cls||clear') # clearing command prompt
@@ -76,3 +106,7 @@ os.system('cls||clear') # clearing command prompt
 if mode == 1:
     driver.get("https://zefoy.com/") # driver getting the site
     tool1() # starting the loop
+    else:
+     driver.get("https://zefoy.com/") # driver getting the site
+    else1() # starting the loop
+
