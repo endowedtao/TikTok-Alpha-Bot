@@ -27,7 +27,7 @@ def tool1():
     except:
         print(Fore.RED + 'Solve the Captcha!') # captcha alert
         driver.refresh() # site refresh
-        loop1()
+        tool1()
     try:
         time.sleep(3)
         driver.find_element_by_xpath("//*[@id=\"sid4\"]/div/div/div/form/div/input").send_keys(vid) #site input text button
