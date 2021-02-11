@@ -38,7 +38,7 @@ def tool1():
         z += 1
         total = z * 1000 # "z" is how many times you used the tool and basically 1000 views per 1z
         print(Fore.GREEN + 'Done! Total Views:', total,'views') # done views
-        time.sleep(330) # 5min timesleep because of 5min cooldown
+        time.sleep(330) # 5min30sec timesleep because of 5min30sec cooldown
         tool1() # repeating
     except:
         print(Fore.RED + 'Timer isn´t finished yet! Trying again in 3 minutes.') # low chance that this will happen unless they changed time on site
