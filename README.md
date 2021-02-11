@@ -40,3 +40,5 @@ then choose your chromedriver version
 Viewbotting is generally prohibited, and should under no circumstances be done. vipto.de is not recommended to use as TikTok is strictly against viewbotting. TikTok Automated Viewbot automates that "illegal" process, so please refrain from using it — developed for educational purposes only.
 
 Thanks to zoony that i could copy paste and change this description as the softwares are basically the same but the code is different. This viewbot works as autoclicker on the zefoy.com site 
+
+If you have any issues with this let me know timer1337@yin.gg. https://linktr.ee/timer1337
