@@ -8,6 +8,7 @@ from colorama import Fore, Back, Style
 # if you have any issues with this contact me on discord
 # Timer#1337 discord.gg/m922xF9
 # for educational purposes only C:
+system("title " + "t.me/undecryptable")
 
 
 chrome_options = webdriver.ChromeOptions()
